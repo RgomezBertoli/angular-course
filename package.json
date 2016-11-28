@@ -1,0 +1,23 @@
+{
+  "name": "angular-course",
+  "version": "1.0.0",
+  "description": "Repositorio con los ejemplos a utilizar en el curso que imparto de Angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RgomezBertoli/angular-course.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RgomezBertoli/angular-course/issues"
+  },
+  "homepage": "https://github.com/RgomezBertoli/angular-course#readme",
+  "dependencies": {
+    "angular": "^1.5.9",
+    "gulp": "^3.9.1"
+  }
+}
