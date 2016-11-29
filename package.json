@@ -18,15 +18,19 @@
   "homepage": "https://github.com/RgomezBertoli/angular-course#readme",
   "dependencies": {
     "angular": "^1.5.9",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "ui-router": "^1.0.0-alpha.3"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.18.0",
     "babelify": "^7.3.0",
+    "browser-sync": "^2.18.2",
     "browserify": "^13.1.1",
     "gulp-angular-templatecache": "^2.0.0",
+    "gulp-clean-css": "^2.0.13",
     "gulp-concat": "^2.6.1",
     "gulp-eslint": "^3.0.1",
+    "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-task-loader": "^1.4.4",
     "vinyl-buffer": "^1.0.0",

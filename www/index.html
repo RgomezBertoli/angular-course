@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Angular-Course</title>
 </head>
+
 <body>
-    <div ng-app="course"></div>
+    <div ng-controller="appController as vm">
+        <h1 ng-bind="vm.name"></h1>
+    </div>
 </body>
-<script rel="text/javascript" src="build/js/app.min.js"></script>
 <script rel="text/javascript" src="build/js/vendors.min.js"></script>
+<script rel="text/javascript" src="build/js/app.min.js"></script>
+
 </html>

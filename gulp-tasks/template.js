@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     templateCache = require('gulp-angular-templatecache');
 
-module.exports = function () {
+module.exports = function remplate() {
     return gulp.src([
             './src/**/*.html'
         ])
