@@ -15,6 +15,6 @@ module.exports = function styles(done) {
         }))
         .pipe(concat('app.min.css'))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./dist/build/css'))
+        .pipe(gulp.dest('./www/build/css'))
         .on('end', done);
 };
