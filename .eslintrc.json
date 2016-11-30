@@ -9,13 +9,15 @@
         "sourceType": "module"
     },
     "globals": {
-        "angular": true
+        "angular": true,
+        "jasmine": true,
+        "describe": true,
+        "it": true,
+        "beforeEach": true,
+        "expect": true,
+        "inject": true
     },
     "rules": {
-        "linebreak-style": [
-            "error",
-            "windows"
-        ],
         "quotes": [
             "error",
             "single"

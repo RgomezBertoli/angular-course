@@ -4,7 +4,8 @@
   "description": "Repositorio con los ejemplos a utilizar en el curso que imparto de Angular",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start",
+    "e2e": "webdriver-manager update && start webdriver-manager start && start http-server www -p 8081"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
     "ui-router": "^1.0.0-alpha.3"
   },
   "devDependencies": {
+    "angular-mocks": "^1.5.9",
+    "babel": "^6.5.2",
     "babel-preset-es2015": "^6.18.0",
     "babelify": "^7.3.0",
     "browser-sync": "^2.18.2",
@@ -33,7 +36,21 @@
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-task-loader": "^1.4.4",
+    "jasmine": "^2.5.2",
+    "jasmine-core": "^2.5.2",
+    "jasmine-spec-reporter": "^2.7.0",
+    "karma": "^1.3.0",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-browserify": "^5.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-spec-reporter": "0.0.26",
+    "phantomjs-prebuilt": "^2.1.13",
+    "protractor": "^4.0.11",
+    "selenium-webdriver": "^3.0.1",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
   }
 }
