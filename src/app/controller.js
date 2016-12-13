@@ -1,6 +1,10 @@
-export default function appController(){
+export default function appController() {
 
     let vm = this;
 
-    vm.name = 'Hola Mundo!!';
+    vm.array = ['Hola Mundo',
+        'Hola Mundo',
+        'Hola Mundo',
+        'Hola Mundo',
+        'Hola Mundo'];
 }
