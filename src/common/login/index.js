@@ -1,12 +1,12 @@
-import controller from './controller';
+import component from './component';
 import config from './config';
 
 const modulo = angular
-    .module('course', [
+    .module('common.login', [
         'templates',
         'ui.router'
     ])
-    .controller('appController', controller)
+    .component('login', component)
     .config(config)
     .name;
 
