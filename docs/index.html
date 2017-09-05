@@ -1,90 +1,131 @@
 <!doctype html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- SEO -->
-    <title>Angular JS Course</title>
-    <meta name="description" content="Curso iniciativo de AngularJS en su ultima versión">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- URL CANONICAL -->
-    <link rel="canonical" href="https://github.com/RgomezBertoli/angular-course">
+  <!-- SEO -->
+  <title>Angular JS Course</title>
+  <meta name="description" content="Curso iniciativo de AngularJS en su ultima versión">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+  <!-- URL CANONICAL -->
+  <link rel="canonical" href="https://github.com/RgomezBertoli/angular-course">
 
-    <!-- CSS WebSlides -->
-    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
-    <link rel="stylesheet" type='text/css' media='all' href="static/css/personal.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+    rel="stylesheet">
 
-    <!-- Optional - CSS SVG Icons (Font Awesome) -->
-    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+  <!-- CSS WebSlides -->
+  <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+  <link rel="stylesheet" type='text/css' media='all' href="static/css/personal.css">
 
-    <!-- FAVICONS -->
-    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
-    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
-    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
-    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
-    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
-    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
-    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+  <!-- Optional - CSS SVG Icons (Font Awesome) -->
+  <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
 
-    <!-- Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#333333">
+  <!-- FAVICONS -->
+  <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+  <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+  <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+  <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+  <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+  <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+  <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
 
-  </head>
-  <body>
-    <header role="banner">
-      <nav role="navigation">
-        <p class="logo"><a href="index.html" title="Angular-Course">Angular-Course</a></p>
-        <ul>
-          <li class="github">
-            <a rel="external" href="https://github.com/RgomezBertoli/angular-course" title="Github">
-              <svg class="fa-github">
-                <use xlink:href="#fa-github"></use>
-              </svg>
-              <em>Angular-Course</em>
-            </a>
-          </li>
-          <li class="twitter">
-            <a rel="external" href="https://twitter.com/rGomezBertoli" title="Twitter">
-              <svg class="fa-twitter">
-                <use xlink:href="#fa-twitter"></use>
-              </svg>
-              <em>@rGomezBertoli</em>
-            </a>
-          </li>
+  <!-- Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#333333">
+
+</head>
+
+<body>
+  <header role="banner">
+    <nav role="navigation">
+      <p class="logo"><a href="index.html" title="Angular-Course">Angular-Course</a></p>
+      <ul>
+        <li class="github">
+          <a rel="external" href="https://github.com/RgomezBertoli/angular-course" title="Github">
+            <svg class="fa-github">
+              <use xlink:href="#fa-github"></use>
+            </svg>
+            <em>Angular-Course</em>
+          </a>
+        </li>
+        <li class="twitter">
+          <a rel="external" href="https://twitter.com/rGomezBertoli" title="Twitter">
+            <svg class="fa-twitter">
+              <use xlink:href="#fa-twitter"></use>
+            </svg>
+            <em>@rGomezBertoli</em>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article id="webslides" class="vertical">
+      <section class="bg-blue">
+        <span class="background dark" style="background-image: url(./static/images/fractal-triangular.png)"></span>
+
+        <div class="wrap aligncenter">
+          <h1><strong>Angular Course</strong></h1>
+          <p class="text-intro">Comienza a crear paginas web</p>
+          <img class="size-20" src="./static/images/logos/angular-js.svg" alt="Logo Angular">
+        </div>
+
+      </section>
+      <section>
+        <div class="wrap aligncenter">
+          <h2>¿Qué es AngularJS?</h2>
+          <p>Es un framework con arquitectura MVVM (Model-View View-Model) desarrollado por Google en el 2010 para construir
+            SPA's</p>
+        </div>
+      </section>
+
+      <section class="wrap aligncenter">
+        <h2>¿Cuáles son sus principales características?</h2>
+        <ul class="flexblock specs">
+          <li>Es un framework por configuración</li>
+          <li>Basa su arquitectura en el Two-Way Data Binding</li>
+          <li>Tiene un injector de dependencias</li>
+          <li>Tiene un ámbito global donde almacena el estado</li>
         </ul>
-      </nav>
-    </header>
+      </section>
 
-    <main role="main">
-      <article id="webslides" class="vertical">
-        <section class="bg-blue">
-         <span class="background dark" style="background-image: url(https://img10.deviantart.net/0333/i/2014/143/d/d/blue_fractal_wallpaper_by_dachterm7622-d7jgjxp.png)"></span>
-
-          <div class="wrap aligncenter">
-            <h1><strong>Angular Course</strong></h1>
-            <p class="text-intro">Comienza a crear paginas web</p>
-            <img class="size-20" src="./static/images/logos/angular-js.svg" alt="Logo Angular">
+      <section class="fullscreen">
+        <div class="card-50">
+          <figure>
+            <img src="./static/images/mantra.jpg" alt="">
+          </figure>
+          <div class="flex-content">
+            <h2>Partes</h2>
           </div>
+        </div>
+      </section>
 
-        </section>
-        <section>
-          <div class="wrap"></div>
-        </section>
-        
-      </article>
+      <section>
+        <div class="card-50">
+          <div class="flex-content aligncenter">
+            <h2>Modulos</h2>
+            <p style="font-size: 2.5rem">Son una agrupación de diferentes fragmentos de la aplicación y que tienen sentido como un conjunto</p>
+          </div>
+          <figure class="content-left">
+            <img src="./static/images/lego.jpg" alt="">
+          </figure>
+        </div>
+      </section>
 
-    </main>
+    </article>
 
-    <script src="static/js/webslides.js"></script>
-    <script>
-      window.ws = new WebSlides();
-    </script>
-    <script defer src="static/js/svg-icons.js"></script>
+  </main>
 
-  </body>
+  <script src="static/js/webslides.js"></script>
+  <script>
+    window.ws = new WebSlides();
+  </script>
+  <script defer src="static/js/svg-icons.js"></script>
+
+</body>
+
 </html>
