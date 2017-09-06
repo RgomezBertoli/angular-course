@@ -9,8 +9,8 @@ var gulp = require('gulp'),
 module.exports = function compile() {
     var sources = browserify({
         entries: [
-            'src/index.js',
-            'www/build/html/templates.js'
+            './www/build/html/templates.js',
+            './src/index.js'
         ],
         debug: true
     })

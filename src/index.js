@@ -1,4 +1,5 @@
-import App from './app/app';
+import App from './root/app';
+
 {
     angular.bootstrap(document, [App]);
 }

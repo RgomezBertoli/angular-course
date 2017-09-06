@@ -3,7 +3,8 @@ var gulp = require('gulp'),
 
 module.exports = function libs(){
     var sources = [
-        'node_modules/angular/angular.min.js'
+        'node_modules/angular/angular.min.js',
+        'node_modules/ui-router/release/angular-ui-router.min.js'
     ];
 
     return gulp.src(sources)
