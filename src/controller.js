@@ -1,9 +1,17 @@
 export default class AppController{
-    constructor($scope){
-        this._scope = $scope;
+    constructor(){
     }
 
     $onInit(){
-        this._scope.saludo = 'hola';
+        this.checked = false;
+        this.spanClass = 'color-text';
+
+        this.alerts = ['uno', 'dos', this.saludo];
+    }
+
+    change(){
+        this.checked = !this.checked;
+
+        this.spanClass = 'color-red';
     }
 }
