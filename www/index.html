@@ -8,20 +8,8 @@
     <link rel="stylesheet" href="build/css/app.min.css">
 </head>
 
-<body ng-app="app" ng-controller="appController as vm">
-    <span ng-class="vm.spanClass" ng-bind="vm.saludo"></span>
-
-    <input type="text" ng-model="vm.saludo">
-
-    <button ng-click="vm.change()">Aceptar</button>
-
-    <input type="checkbox" ng-checked="vm.checked"> Input Checked
-
-    <p ng-show="vm.checked">Estaba escondido</p>
-
-    <div ng-repeat="alert in vm.alerts">
-        <span ng-bind="alert"></span>
-    </div>
+<body ng-app="app">
+    <div ui-view></div>
 </body>
 
 <script rel="text/javascript" src="build/js/vendors.min.js"></script>

@@ -1,5 +1,6 @@
 export default class AppController{
-    constructor(){
+    constructor($localStorage){
+        this._$ls = $localStorage;
     }
 
     $onInit(){
@@ -13,5 +14,9 @@ export default class AppController{
         this.checked = !this.checked;
 
         this.spanClass = 'color-red';
+
+        if(this.saludo){
+            this._$ls.set('prueba', this.saludo);
+        }
     }
 }
