@@ -1,6 +1,7 @@
 export default class AppController{
-    constructor($localStorage){
+    constructor($scope, $localStorage){
         this._$ls = $localStorage;
+        this._scope = $scope;
     }
 
     $onInit(){
@@ -18,5 +19,9 @@ export default class AppController{
         if(this.saludo){
             this._$ls.set('prueba', this.saludo);
         }
+    }
+
+    updateFiles(files){
+        this._scope.$apply(()=> this.file = files);
     }
 }

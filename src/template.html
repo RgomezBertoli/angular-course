@@ -1,1 +1,7 @@
 <h1>Hola Mundo!!!</h1>
+
+<input type="file" ng-file="vm.updateFiles">
+
+<div ng-repeat="files in vm.file">
+    <span ng-bind="files.name"></span>
+</div>
