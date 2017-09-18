@@ -1,0 +1,17 @@
+<header>
+    <h1>Login</h1>
+</header>
+<main>
+    <form>
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" ng-model="vm.user.username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="text" name="password" ng-model="vm.user.pass">
+        </div>
+
+        <button ng-click="vm.login()">Aceptar</button>
+    </form>
+</main>
