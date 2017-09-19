@@ -1,6 +1,6 @@
 const url = 'https://to-do-course.herokuapp.com/';
 
-export default class LoginController{
+export default class RegisterController{
     constructor($http, $localStorage, $state){
         this._http = $http;
         this._ls = $localStorage;
@@ -9,14 +9,14 @@ export default class LoginController{
 
     $onInit(){}
 
-    goRegister(){
-        this._state.go('register');
+    backLogin(){
+        this._state.go('login');
     }
 
     login(){
         const body = this.user;
 
-        this._http.post(url + 'public/login', body)
+        this._http.post(url + 'public/register', body)
             .then(res => {
                 this._ls.set('token', res.data.token);
             });
