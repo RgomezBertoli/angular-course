@@ -7,5 +7,6 @@ module.exports = function linter() {
             './gulp-tasks/**/*.js'
         ])
         .pipe(eslint())
+        .pipe(eslint.format())
         .pipe(eslint.failAfterError());
 };
