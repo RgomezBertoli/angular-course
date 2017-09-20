@@ -18,12 +18,14 @@
     <div>
         <ul>
             <li ng-repeat="task in vm.tasks">
-                <p ng-bind="task.name"></p>
+                <p ng-bind="task.taskName"></p>
                 <p ng-bind="task.description"></p>
                 <div>
                     <label for="task-done">Hecha</label>
                     <input type="checkbox" name="task-done" ng-model="task.done">
                 </div>
+                <button ng-click="vm.editTask(task)">Editar</button>
+                <button ng-click="vm.deleteTask(task)">Eliminar</button>
             </li>
         </ul>
     </div>

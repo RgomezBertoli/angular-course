@@ -28,4 +28,24 @@ export default class TasksController {
                 this.newTask = {};
             });
     }
+
+    editTask(task){
+        this._http.put(url + 'private/tasks/' + task._id, task)
+        .then(res => {
+            const editedTask = res.data.task;
+            this.tasks = this.tasks.map(elem => {
+                return elem._id === editedTask._id ? editedTask : elem;
+            });
+        });
+    }
+
+    deleteTask(task){
+        this._http.delete(url + 'private/tasks/' + task._id)
+        .then(res => {
+            const deletedTask = res.data.task;
+            this.tasks = this.tasks.filter(elem => {
+                return elem._id !== deletedTask._id;
+            });
+        });
+    }
 }
