@@ -1,18 +1,31 @@
 <header>
     <h1>Tasks</h1>
+    <button ng-click="vm.logout()">Logout</button>
 </header>
 <main>
     <form>
         <div>
-            <label for="username">Username</label>
-            <input type="text" name="username" ng-model="vm.user.username">
+            <label for="name">Task Name</label>
+            <input type="text" name="name" ng-model="vm.newTask.name">
         </div>
         <div>
-            <label for="password">Password</label>
-            <input type="text" name="password" ng-model="vm.user.pass">
+            <label for="description">Description</label>
+            <input type="text" name="description" ng-model="vm.newTask.description">
         </div>
 
-        <button ng-click="vm.login()">Aceptar</button>
+        <button ng-click="vm.addTask()">Añadir</button>
     </form>
-    <button ng-click="vm.backLogin()">Volver a Login</button>
+    <div>
+        <ul>
+            <li ng-repeat="task in vm.tasks">
+                <p ng-bind="task.name"></p>
+                <p ng-bind="task.description"></p>
+                <div>
+                    <label for="task-done">Hecha</label>
+                    <input type="checkbox" name="task-done" ng-model="task.done">
+                </div>
+            </li>
+        </ul>
+    </div>
+    
 </main>

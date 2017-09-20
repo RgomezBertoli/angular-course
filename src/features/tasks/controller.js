@@ -1,24 +1,31 @@
 const url = 'https://to-do-course.herokuapp.com/';
 
-export default class TasksController{
-    constructor($http, $localStorage, $state){
+export default class TasksController {
+    constructor($http, $localStorage, $state) {
         this._http = $http;
         this._ls = $localStorage;
         this._state = $state;
     }
 
-    $onInit(){}
+    $onInit() {
+        this._http.get(url + 'private/tasks')
+            .then(res => {
+                this.tasks = res.data.tasks;
+            });
+    }
 
-    backLogin(){
+    logout() {
+        this.$localStorage.delete('token');
         this._state.go('login');
     }
 
-    login(){
-        const body = this.user;
+    addTask() {
+        const body = this.newTask;
 
-        this._http.post(url + 'public/register', body)
+        this._http.post(url + 'private/tasks', body)
             .then(res => {
-                this._ls.set('token', res.data.token);
+                this.tasks.push(res.data.task);
+                this.newTask = {};
             });
     }
 }
