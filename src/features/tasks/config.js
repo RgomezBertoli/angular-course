@@ -10,7 +10,7 @@ export default function($stateProvider){
             controllerAs: 'vm',
             templateUrl: 'src/features/tasks/template.html',
             onEnter: ['$state', '$localStorage', function($state, $localStorage){
-                const token = $lolStorage.get('token');
+                const token = $localStorage.get('token');
 
                 if(token){
                     return Promise.resolve();
