@@ -19,6 +19,7 @@ export default class LoginController{
         this._http.post(url + 'public/login', body)
             .then(res => {
                 this._ls.set('token', res.data.token);
+                this._state.go('tasks');
             });
     }
 }

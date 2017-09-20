@@ -7,7 +7,7 @@ export default class TasksController {
         this._state = $state;
     }
 
-    $onInit() {
+    onInit() {
         this._http.get(url + 'private/tasks')
             .then(res => {
                 this.tasks = res.data.tasks;

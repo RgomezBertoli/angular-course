@@ -2,11 +2,11 @@
     <h1>Tasks</h1>
     <button ng-click="vm.logout()">Logout</button>
 </header>
-<main>
+<main ng-init="vm.onInit()">
     <form>
         <div>
             <label for="name">Task Name</label>
-            <input type="text" name="name" ng-model="vm.newTask.name">
+            <input type="text" name="name" ng-model="vm.newTask.taskName">
         </div>
         <div>
             <label for="description">Description</label>
