@@ -15,7 +15,7 @@ export default class TasksController {
     }
 
     logout() {
-        this.$localStorage.delete('token');
+        this._ls.delete('token');
         this._state.go('login');
     }
 
