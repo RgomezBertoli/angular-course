@@ -3,16 +3,10 @@
 </header>
 <main>
     <form>
-        <div>
-            <label for="username">Username</label>
-            <input type="text" name="username" ng-model="vm.user.username">
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="text" name="password" ng-model="vm.user.pass">
-        </div>
+        <generic-input label="username" ng-model="vm.user.username"></generic-input>
+        <generic-input type="password" label="password" ng-model="vm.user.pass"></generic-input>
 
-        <button ng-click="vm.login()">Aceptar</button>
+        <action-button tap="vm.login()"></action-button>
     </form>
-    <button ng-click="vm.goRegister()">Registrar Usuario</button>
+    <action-button tap="vm.goRegister()" label="Registrar Usuario"></action-button>
 </main>
